@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carusel de imaxes accesible II</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="carousel" role="region" aria-label="Imaxes destacadas">
+        <button class="carousel__prev" aria-label="Anterior">❮</button>
+        <button class="carousel__next" aria-label="Seguiente">❯</button>
+        <div class="carousel__slides" role="list" aria-label="Diapositivas">
+            <div class="carousel__slide" role="listitem" id="slide1" tabindex="0" aria-hidden="false">
+                <h4>Totoro</h4>
+                <img src="./img/galeria01.png" alt="Ilustración que recrea un Totoro adolescente">
+                <p>Cando es adolescente e non sabes cómo peñerte.</p>
+            </div>
+            <div class="carousel__slide" role="listitem" id="slide2" tabindex="-1" aria-hidden="true">
+                <h4>O durminte de Laputa</h4>
+                <img src="./img/galeria02.png"
+                    alt="Ilustración dun durminte de Laputa, da película de animación O castelo no ceo">
+                <p>Máis que durmindo está esperando que chegue o momento de espertar e aínda que pareza profundamente
+                    durmido, realmente está a un intre de saír do letargo.</p>
+            </div>
+            <div class="carousel__slide" role="listitem" id="slide3" tabindex="-1" aria-hidden="true">
+                <h4>Chihiro</h4>
+                <img src="./img/galeria03.png"
+                    alt="Ilustracón da personaxe Chihiro con seus pais convertidos en cerdos">
+                <p>Retrato de Chihiro cos seus pais.</p>
+            </div>
+            <div class="carousel__slide" role="listitem" id="slide4" tabindex="-1" aria-hidden="true">
+                <h4>Snoopy e os seus secuaces</h4>
+                <img src="./img/galeria04.png" alt="Debuxo de Snoopy arastrando polos pés ao cadáver de Charlie Brown">
+                <p>Nas relacións tóxicas sempre hai que esperan un momento de furia. Por iso hai que facer todo o
+                    posible por fuxir delas.</p>
+            </div>
+            <div class="carousel__slide" role="listitem" id="slide5" tabindex="-1" aria-hidden="true">
+                <h4>Hugo Chávez, o fundador</h4>
+                <img src="./img/galeria05.png" alt="Retrato de Hugo Chávez con características de cerdo">
+                <p>Rebelión na granxa á venezolana: cerdos que terminaron levantándose sobre súas patas traseiras, tal e
+                    como fixeran os seus antecesores.</p>
+            </div>
+            <div class="carousel__slide" role="listitem" id="slide6" tabindex="-1" aria-hidden="true">
+                <h4>Nicolás Maduro, o sucesor</h4>
+                <img src="./img/galeria06.png" alt="Ilustración de Nicolás Maduro con características de cerdo">
+                <p> O sucesor nos réximes non soe ser o máis capaz, senón o máis fiel. Como digno sucesor do réxime
+                    posee as mesmas formas autoritarias dos que cavaron a tumba na que o país que din amar, defender e
+                    respectar.</p>
+            </div>
+            <div class="carousel__slide" role="listitem" id="slide7" tabindex="-1" aria-hidden="true">
+                <h4>Rodríguez Zapateinskein</h4>
+                <img src="./img/galeria07.png" alt="Ilustración de Rodríguez Zapatero como se fora Franskenstein">
+
+                <p> Político "iluminado" que sempre actúa convencido. Non pode ser discutido porque foi ungido polo
+                    poblo español. Só pode ser xulgado pola historia, non polos seus coetáneos. Os outros sempre están
+                    equivocados.</p>
+            </div>
+            <div class="carousel__slide" role="listitem" id="slide8" tabindex="-1" aria-hidden="true">
+                <h4>Pedro Sánchez</h4>
+                <img src="./img/galeria08.png" alt="Retato de Pedro Sánchez con nariz de Pinocho">
+                <p> É o Rei de tódalas Españas Federales posibles; monárquico e anarquista se fai falta. Progresista e
+                    de eaquerda no de actos sino de corazón. O seu maior mérito; gañar a Guerra Civil 80 anos despois.
+                </p>
+            </div>
+        </div>
+        <div class="carousel__controls">
+            <div class="carousel__indicators" role="tablist" aria-orientation="horizontal">
+                <button class="carousel__indicator" role="tab" aria-controls="slide1" aria-selected="true"></button>
+                <button class="carousel__indicator" role="tab" aria-controls="slide2" aria-selected="false"></button>
+                <button class="carousel__indicator" role="tab" aria-controls="slide3" aria-selected="false"></button>
+                <button class="carousel__indicator" role="tab" aria-controls="slide4" aria-selected="false"></button>
+                <button class="carousel__indicator" role="tab" aria-controls="slide5" aria-selected="false"></button>
+                <button class="carousel__indicator" role="tab" aria-controls="slide6" aria-selected="false"></button>
+                <button class="carousel__indicator" role="tab" aria-controls="slide7" aria-selected="false"></button>
+                <button class="carousel__indicator" role="tab" aria-controls="slide8" aria-selected="false"></button>
+            </div>
+            <button class="carousel__pause" aria-pressed="false">Pausar</button>
+        </div>
+
+    </div>
+
+    <script src="js/carrusel.js"></script>
+
+</body>
+
+</html>
